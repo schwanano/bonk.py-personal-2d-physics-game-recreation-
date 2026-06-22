@@ -471,9 +471,9 @@ class Rect:
 
     def render(self, screen):
         surf = pygame.transform.smoothscale(self.base_image, (self.width, self.height))
-        surf = pygame.transform.rotate(surf, -math.degrees(self.facing))
+        surf = pygame.transform.rotate(surf, math.degrees(self.facing))
         rect = surf.get_rect(center = self.pos)
-        surf.blit(screen, rect)
+        screen.blit(surf, rect)
         if self.bouncy:
             pygame.draw.aalines(
                 screen, "black", True, [self.t_r, self.b_r, self.b_l, self.t_l]
