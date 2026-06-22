@@ -1,0 +1,26 @@
+# players
+players["p_1"] = Player("P1", screen.get_width() / 10 * 4, screen.get_height(), "red",
+	pygame.K_a, pygame.K_d, pygame.K_w, pygame.K_s, pygame.K_SPACE, pygame.K_LSHIFT)
+players["p_2"] = Player("P2", screen.get_width() / 10 * 6, screen.get_height(), "blue",
+	pygame.K_LEFT, pygame.K_RIGHT, pygame.K_UP, pygame.K_DOWN, pygame.K_RETURN, pygame.K_RSHIFT)
+
+# objects
+rects["rot_plus_L_1"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 4, screen.get_height() / 4),
+	screen.get_width() / 3, 15,
+	rotation = (False, 0, 2))
+
+rects["rot_plus_L_2"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 4, screen.get_height() / 4),
+	screen.get_width() / 3, 15,
+	facing = 90,
+	rotation = (False, 0, 2))
+
+rects["rot_plus_R_1"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 4 * 3, screen.get_height() / 4),
+	screen.get_width() / 3, 15,
+	rotation = (False, 0, -2))
+
+rects["rot_plus_R_2"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 4 * 3, screen.get_height() / 4),
+	screen.get_width() / 3, 15,
+	facing = 90,
+	rotation = (False, 0, -2))
+
+\

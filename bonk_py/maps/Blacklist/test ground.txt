@@ -1,0 +1,14 @@
+# players
+players["p_1"] = Player("P1", screen.get_width() / 2 - 15, screen.get_height() / 2, "red",
+	pygame.K_a, pygame.K_d, pygame.K_w, pygame.K_s, pygame.K_SPACE, pygame.K_LSHIFT)
+players["p_2"] = Player("P2", screen.get_width() / 2 + 15, screen.get_height() / 2, "blue",
+	pygame.K_LEFT, pygame.K_RIGHT, pygame.K_UP, pygame.K_DOWN, pygame.K_RETURN, pygame.K_RSHIFT)
+players["test"] = Player("TEST_PLAYER", screen.get_width() / 2, screen.get_height() / 2 + 10, "green",
+	pygame.K_g, pygame.K_j, pygame.K_y, pygame.K_h, pygame.K_t, pygame.K_u)
+
+# objects
+rects["test"] = Rect("black", pygame.math.Vector2(screen.get_width() / 2, screen.get_height() / 2), 100, 100,
+	bouncy = 1.7)
+rects["moving"] = Rect("purple", pygame.math.Vector2(100, 100), 100, 10,
+	movement = ((0, 100), (screen.get_width(), 100), (-300, 0)))
+\

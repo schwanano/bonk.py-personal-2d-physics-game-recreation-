@@ -1,0 +1,15 @@
+# players
+players["p_1"] = Player("P1", screen.get_width() / 3, screen.get_height() / 2, "red",
+	pygame.K_a, pygame.K_d, pygame.K_w, pygame.K_s, pygame.K_LCTRL, pygame.K_LSHIFT)
+players["p_2"] = Player("P2", screen.get_width() / 3 * 2, screen.get_height() / 2, "blue",
+	pygame.K_LEFT, pygame.K_RIGHT, pygame.K_UP, pygame.K_DOWN, pygame.K_RETURN, pygame.K_RSHIFT)
+
+# objects
+for i in range(11):
+	angle = i * 30
+	print(angle)
+	test = 370
+	starting_point = pygame.math.Vector2(screen.get_width() / 2 + test * math.sin(math.radians(angle)), screen.get_height() / 2 + test * math.cos(math.radians(angle)))
+	Rect((0, 0, angle / 2), starting_point, 200, 10,
+	facing = angle,
+	rotation = ((screen.get_width() / 2, screen.get_height() / 2), 1, -1))

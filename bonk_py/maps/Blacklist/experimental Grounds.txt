@@ -1,0 +1,25 @@
+# players
+players["p_1"] = Player("P1", screen.get_width() / 6, screen.get_height() / 4 * 3, "red",
+	pygame.K_a, pygame.K_d, pygame.K_w, pygame.K_s, pygame.K_SPACE, pygame.K_LSHIFT)
+players["p_2"] = Player("P2", screen.get_width() / 6 * 5, screen.get_height() / 4 * 3, "blue",
+	pygame.K_LEFT, pygame.K_RIGHT, pygame.K_UP, pygame.K_DOWN, pygame.K_RETURN, pygame.K_RSHIFT)
+
+# objects
+rects["orbiting_rect_a_1"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 8, screen.get_height() / 2), 150, 10,
+    rotation = (pygame.math.Vector2(screen.get_width() / 4, screen.get_height() / 2), -0.4, 0))
+rects["orbiting_rect_a_2"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 8 * 3, screen.get_height() / 2), 150, 10,
+    rotation = (pygame.math.Vector2(screen.get_width() / 4, screen.get_height() / 2), -0.4, 0))
+
+rects["center_rect_a"] = Rect("yellow", pygame.math.Vector2(screen.get_width() / 4, screen.get_height() / 2), 75, 75,
+    facing = 45, bouncy = 2, rotation = (None, 0, 0.5))
+
+rects["orbiting_rect_b_1"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 8 * 5, screen.get_height() / 2), 150, 10,
+    rotation = (pygame.math.Vector2(screen.get_width() / 4 * 3, screen.get_height() / 2), 0.4, 0))
+rects["orbiting_rect_b_2"] = Rect("grey", pygame.math.Vector2(screen.get_width() / 8 * 7, screen.get_height() / 2), 150, 10,
+    rotation = (pygame.math.Vector2(screen.get_width() / 4 * 3, screen.get_height() / 2), 0.4, 0))
+
+rects["center_rect_b"] = Rect("yellow", pygame.math.Vector2(screen.get_width() / 4 * 3, screen.get_height() / 2), 75, 75,
+    facing = 45, bouncy = 2, rotation = (None, 0, -0.5))
+
+
+\

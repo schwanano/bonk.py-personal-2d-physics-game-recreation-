@@ -1,0 +1,19 @@
+# players
+players["p_1"] = Player("P1", 30, 680, "red",
+	pygame.K_a, pygame.K_d, pygame.K_w, pygame.K_s, pygame.K_SPACE, pygame.K_LSHIFT)
+players["p_2"] = Player("P2", screen.get_width() - 30, 680, "blue",
+	pygame.K_LEFT, pygame.K_RIGHT, pygame.K_UP, pygame.K_DOWN, pygame.K_RETURN, pygame.K_RSHIFT)
+
+# objects
+rects["bounce_wall_L"] = Rect("yellow", pygame.math.Vector2(5, screen.get_height() / 2), 10, screen.get_height(), 0, 1.5)
+rects["bounce_wall_R"] = Rect("yellow", pygame.math.Vector2(screen.get_width() - 5, screen.get_height() / 2), 10, screen.get_height(), 0, 1.5)
+rects["bounce_ceiling"] = Rect("yellow", pygame.math.Vector2(screen.get_width() / 2, 715), screen.get_width(), 10, 0, 1.5)
+rects["bounce_ground_1"] = Rect("yellow", pygame.math.Vector2(screen.get_width() / 10, 100), 300, 10, -20, 2)
+rects["bounce_ground_2"] = Rect("yellow", pygame.math.Vector2(screen.get_width() / 10 * 9, 100), 300, 10, 20, 2)
+rects["bounce_ground_mid"] = Rect((150, 0, 0), pygame.math.Vector2(screen.get_width() / 2, screen.get_height() / 3), 150, 150, 45, 3)
+rects["bounce_ground_bottom_L"] = Rect((150, 0, 0), pygame.math.Vector2(screen.get_width() / 5 * 2, 50), 280, 10, -15, 3)
+rects["bounce_ground_bottom_R"] = Rect((150, 0, 0), pygame.math.Vector2(screen.get_width() / 5 * 3, 50), 280, 10, 15, 3)
+
+#rects["y_limit"] = Rect("black", pygame.math.Vector2(screen.get_width() / 2, screen.get_height() / 2), screen.get_width() * 10, screen.get_height() * 2, 0, 1)
+
+\
